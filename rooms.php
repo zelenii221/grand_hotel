@@ -8,7 +8,7 @@
 		$check_in = $data['check_in'];
 		$check_out = $data['check_out'];
 		$capacity = $data['capacity'];
-		if (!check_date($check_in) && !check_date($check_out)/* && $check_in < $check_out*/){
+		if (check_date($check_in) && check_date($check_out) && check_capacity($capacity)/* && $check_in < $check_out*/){
 			echo "<script>document.location.replace('rooms.php?check_in=".$check_in."&check_out=".$check_out."&capacity=".$capacity."');</script>";
 		}
 	}

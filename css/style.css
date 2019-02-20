@@ -16,7 +16,7 @@ html {
 body {
 	background-color: #EAF1F7;
 	width: 100%;
-	height: 1000px;
+	min-height: 900px;
 	margin: 0;
 	/*padding: 0;*/
 }
@@ -32,6 +32,39 @@ header {
 	margin: 0;
 	padding: 0;
 	z-index: -1;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	color: #f3efa8;
+	letter-spacing: 2px;
+	height: 80px;
+	background-color: #ed1f1f;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+}
+
+footer img {
+	height: 30px;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#backh {
+	margin-top: -80px;
+	margin-bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: -5;
+	height: 100%;
+	object-fit: cover;
 }
 
 #header_content {
@@ -213,17 +246,19 @@ p input{
 /*index.html*/
 
 content {
+	/*opacity: 0.5;*/
+	z-index: -6;
 	padding-top: 1px; 
 	display: block;
 	width: 1200px;
-	height: 1000px;
-	background-color: white;
+	min-height: 900px;
+	/*background-color: white;*/
 	margin: 0 auto;
 	border-style: none;
 }
 
 content h2 {
-	color: #ed1f1f;
+	color: #632020;
 }
 
 #check {
@@ -261,24 +296,24 @@ content h2 {
 }
 
 #change_check {
-	color: #ed1f1f;
+	color: #632020;
 	height: 80px;
 }
 
 #change_check input{
-	color: #ed1f1f;
+	color: #632020;
 	width: 140px;
 	background-color: transparent;
-	border: 1px solid #ed1f1f; 
+	border: 1px solid #632020; 
 	border-radius: 5px;
 }
 
 #change_check button{
-	color: #ed1f1f;
+	color: #632020;
 	background-color: transparent;
 	display: inline-block;
 	padding: 10px;
-	border: 1px solid #ed1f1f; 
+	border: 1px solid #632020; 
 	border-radius: 5px;
 	margin: auto;
 }
@@ -322,9 +357,45 @@ content h2 {
 
 .price button{
 	margin-top: 150px;
-	color: #f3efa8;
 	background-color: transparent;
 	padding: 10px;
 	border: 1px solid #f3efa8; 
 	border-radius: 5px;
+}
+
+.price * {
+	color: #f3efa8;
+}
+
+.room_block_about {
+	height: 500px;
+	background-color: #ed1f1f;
+	margin-top: 60px;
+    border: 2px solid #af7e91;
+
+}
+
+.img_block {
+	background-color: #eaf1f7;
+	width: 100%;
+	text-align: center;
+}
+
+.img_block img {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 33%;
+}
+
+.img_block img:nth-child(1) {
+	float: left;
+}
+
+.img_block img:nth-child(3) {
+	float: right;
+}
+
+.room_block_about * {
+	color: #f3efa8;
 }

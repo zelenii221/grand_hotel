@@ -6,8 +6,10 @@
 <?php foreach($rooms as $room):?>
 
 	<div class="room_block">
-		<form method="POST">
-			<img src="img/room.jpg">
+		<form method="POST">		
+			<?php $images = get_img($room['room']);?>
+			<img src="img/<?=$images[1]['room_id_img'] ?>"/>
+
 			<div class="room_info">
 				<p><?=$room['name']?></p>
 				<p>Количество мест: <?=$room['capacity']?></p>
@@ -15,7 +17,7 @@
 			</div>
 			<div class="price">
 				<p>От <?=$room['price']?> за ночь</p>
-				
+					<button><a href="about_room.php?room=<?= $room['room'] ?>">Информация</a></button>
 					<button type="submit" name="<?=$room['room']?>" class="btn btn-success">Зарезервировать</button>
 				
 			</div>
@@ -35,8 +37,8 @@
 		$price = (date_difference($check_in, $check_out)['dif'] + 1) * $room['price'];
 		set_reserv($check_in, $check_out, $logged_user, $id_room, $price);
 		echo "Номер зарезервирован";
-		echo "$price";
-		var_dump($price);
+		// echo "$price";
+		// var_dump($price);
 	}
 
 ?>
