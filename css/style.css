@@ -1,0 +1,330 @@
+:link ,:visited ,:hover, :active {
+	text-decoration: none;
+	outline: 0;
+    outline-offset: 0;
+}
+
+* { 
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	/*color: #f3efa8;*/
+}
+
+html {
+
+}
+
+body {
+	background-color: #EAF1F7;
+	width: 100%;
+	height: 1000px;
+	margin: 0;
+	/*padding: 0;*/
+}
+
+
+/*header*/
+
+header {
+	color: #f3efa8;
+	letter-spacing: 2px;
+	height: 80px;
+	background-color: #ed1f1f;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+}
+
+#header_content {
+	display: table;
+	text-align: right;
+	margin: 0 auto;
+	width: 1200px;
+	height: 80px;
+}
+
+#ico {
+	display: table-cell;
+	/*height: 80px;*/
+	width: 100px;
+	vertical-align: middle;
+	padding-left: padding-top; 
+}
+
+#menu p {
+	margin: 0;
+}
+
+.sign {
+	/*float: right;*/
+	width: 280px;
+	/*height: 80px;*/
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	/*height: 80px;*/
+	padding-right: 5px;
+}
+
+.sign img {
+	/*width: 10px;*/
+	height: 28px;
+}
+
+.sign center {
+	cursor: pointer;
+}
+
+#signin {
+	display: block;
+	width: 100px;
+	padding: 10px;
+	border: 1px solid #f3efa8; 
+	border-radius: 5px;
+	margin-right: 0;
+	margin-left: auto;
+	text-align: center;
+}
+
+.sign span{
+	font-size: 13px;
+}
+
+#menu {
+	/*width: 400px;*/
+	height: 80px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+#menu a{
+	color: #f3efa8;
+	margin: 0 7%;
+	font-size: 15px;
+}
+
+/*.phonenumber {
+	margin-left: 20px;
+}
+*/
+
+
+#user_block {
+	text-align: center;
+	display: none;
+	position: absolute;
+	background-color: #ff0000;
+	border: 2px solid #f3efa8;
+	border-radius: 0 0 5px 5px;
+	border-top-style: none;
+	width: 285px;
+	margin-top: 24px;
+}
+
+#user_block ul {
+	text-align: center;
+	list-style: none; 
+	padding-left: 0;
+}
+
+#user_block hr {
+	color: #f3efa8;
+	background-color: #f3efa8;
+	height: 1px;
+	border: none;
+}
+
+#user_block a{
+	color: #f3efa8;
+}
+
+
+
+.sign:hover #user_block{ 
+	display: block;
+}
+
+/*registration*/
+
+.background_registration {
+	top: 0;
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: black;
+	opacity: 0.25;
+}
+
+.registration {
+	color: #f3efa8;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-left: -200px;
+	margin-top: -200px;
+	border: 3px solid #f3efa8; 
+	border-radius: 40px;
+	background-color: #ed1f1f;
+}
+
+.registration > p{
+	text-align: center;
+}
+
+p input{
+	color: #f3efa8;
+	width: 140px;
+	background-color: transparent;
+	border: 1px solid #f3efa8; 
+	border-radius: 5px;
+	display: block;
+	float: right;
+}
+
+.registration form {
+	width: 250px;
+	display: block;
+	margin: auto;
+	margin-top: 85px;
+}
+
+.registration button {
+	color: #f3efa8;
+	background-color: transparent;
+	display: block;
+	padding: 10px;
+	border: 1px solid #f3efa8; 
+	border-radius: 5px;
+	margin: auto;
+}
+
+.registration form button{
+	margin-top: 100px;
+}
+
+
+#id{}
+
+/*index.html*/
+
+content {
+	padding-top: 1px; 
+	display: block;
+	width: 1200px;
+	height: 1000px;
+	background-color: white;
+	margin: 0 auto;
+	border-style: none;
+}
+
+content h2 {
+	color: #ed1f1f;
+}
+
+#check {
+	color: #f3efa8;
+	background: #ed1f1f url(../img/frame.svg) center no-repeat;
+	background-size: 380px auto;
+	margin-top: 100px;
+	margin-left: 100px;
+	display: block;
+	border-radius: 40px;
+	width: 400px;
+	height: 400px; 
+	overflow: hidden;
+}
+
+#check div {
+	margin-top: 50px 
+}
+
+#check form {
+	margin: auto;
+	margin-top: 90px;
+	width: 300px;
+}
+
+#check button {
+	color: #f3efa8;
+	background-color: transparent;
+	display: block;
+	padding: 10px;
+	border: 1px solid #f3efa8; 
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 70px
+}
+
+#change_check {
+	color: #ed1f1f;
+	height: 80px;
+}
+
+#change_check input{
+	color: #ed1f1f;
+	width: 140px;
+	background-color: transparent;
+	border: 1px solid #ed1f1f; 
+	border-radius: 5px;
+}
+
+#change_check button{
+	color: #ed1f1f;
+	background-color: transparent;
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #ed1f1f; 
+	border-radius: 5px;
+	margin: auto;
+}
+
+.room_block {
+	color: #f3efa8;
+	display: block;
+	margin-top: 20px;
+	background-color: #ed1f1f;
+	height: 280px;
+}
+
+.room_block img{
+	height: 100%;
+	width: 500px;
+}
+
+.room_block div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.room_info p:first-of-type {
+	font-size: 20px;
+}
+
+.room_info p {
+	font-size: 15px;
+}
+
+.room_info div {
+	display: inline-block;
+	float: right;
+}
+
+.price {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.price button{
+	margin-top: 150px;
+	color: #f3efa8;
+	background-color: transparent;
+	padding: 10px;
+	border: 1px solid #f3efa8; 
+	border-radius: 5px;
+}
