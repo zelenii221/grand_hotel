@@ -42,7 +42,8 @@
 								<form method="POST">
 									<input type="text" name="sql_zapr">
 									<button type="submit" name="zepr"></button>
-								</form>>
+								</form>
+								<a href="add_room.php">Добавить номер</a>
 							<?php endif;?>
 
 

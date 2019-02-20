@@ -145,26 +145,6 @@
 		return $result;
 	}
 
-	function search_group_by_Login($login){
-		global $db;
-
-		$search_query = "SELECT role FROM users WHERE login = '$login'";
-
-		$result = implode (mysqli_fetch_assoc(mysqli_query($db, $search_query)));
-
-		return $result;
-	}
-
-	function count_category_id(){
-		
-
-		$sql = 'SELECT COUNT(*) FROM Id.COLUMNS WHERE table_catalog = "library" AND table_name = "categories"';
-
-		$result = mysqli_query($db, $sql);
-
-		return $result;
-	}
-
 	function search_email($email){
 		global $db;
 
@@ -221,34 +201,5 @@
 		$result = mysqli_query($db, $sql);
 
 		return  mysqli_fetch_assoc($result);
-	}
-
-	function insert_subscriber($email) {
-    global $bd;
-    
-    $email = mysqli_real_escape_string($bd, $email);
-    //1. Проверить есть ли подписчик в таблице subscribers
-    $query = "SELECT * FROM subscribers WHERE Email = '$email'";
-    
-    $result = mysqli_query($bd, $query);
-    
-    if (!mysqli_num_rows($result)) {
-        //2. Если его нет, то создаем подписчика с уникальным кодом (неактивного)
-        $subscriber_code = generate_code();
-        
-        $insert_query = "INSERT INTO subscribers (Email, Code) VALUES ('$email', '$subscriber_code')";
-        
-        $result = mysqli_query($bd, $insert_query);
-        
-        if ($result) {
-            return 'created';
-        } else {
-            return 'fail';
-        }
-        
-    } else {
-        return 'exist';
-    }
-     
 	}
 ?>
