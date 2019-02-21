@@ -177,6 +177,16 @@
 
 	}
 
+		function search_group_by_Login($login){
+		global $db;
+
+		$search_query = 'SELECT role FROM users WHERE login = "'.$login.'"';
+
+		$result = implode (mysqli_fetch_assoc(mysqli_query($db, $search_query)));
+
+		return $result;
+	}
+
 	function add_room2($image1, $image2, $image3, $temp){
 		global $db;	
 		$temp = mysqli_fetch_assoc(mysqli_query($db, "SELECT MAX(id) FROM rooms"))['MAX(id)']; 
